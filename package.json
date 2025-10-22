@@ -1,0 +1,27 @@
+{
+  "name": "eureka-desktop",
+  "description": "Eureka Notes Desktop App",
+  "author": {
+    "name": "Izaak Kuipers",
+    "email": "izaak.kuipers@gmail.com"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "38.4.0"
+  },
+  "dependencies": {
+    "@types/node": "^24.9.1"
+  },
+  "build": {
+    "nsis": {
+      "artifactName":"EurekaSetup.${ext}"
+    },
+    "productName": "Eureka"
+  }
+}
