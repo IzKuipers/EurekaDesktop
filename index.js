@@ -1,5 +1,7 @@
 import { app, BrowserWindow, dialog } from "electron";
 
+app.commandLine.appendSwitch("disable-http-cache");
+
 app.on("ready", () => {
   const win = new BrowserWindow({
     width: 800,
@@ -12,7 +14,9 @@ app.on("ready", () => {
   });
 
   win.removeMenu();
-  win.loadURL(`https://eureka.izkuipers.nl/?t=${Date.now()}`);
+  win.loadURL(`https://eureka.izkuipers.nl/?t=${Date.now()}`, {
+    extraHeaders: "pragma: no-cache\n",
+  });
 
   win.addListener("close", (e) => {
     const response = dialog.showMessageBoxSync(win, {
