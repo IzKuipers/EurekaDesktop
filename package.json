@@ -5,7 +5,7 @@
     "name": "Izaak Kuipers",
     "email": "izaak.kuipers@gmail.com"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
@@ -20,7 +20,7 @@
   },
   "build": {
     "nsis": {
-      "artifactName":"EurekaSetup.${ext}"
+      "artifactName": "EurekaSetup.${ext}"
     },
     "productName": "Eureka"
   }

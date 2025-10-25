@@ -12,7 +12,7 @@ app.on("ready", () => {
   });
 
   win.removeMenu();
-  win.loadURL("https://eureka.izkuipers.nl/");
+  win.loadURL(`https://eureka.izkuipers.nl/?t=${Date.now()}`);
 
   win.addListener("close", (e) => {
     const response = dialog.showMessageBoxSync(win, {
