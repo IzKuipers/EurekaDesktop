@@ -4,10 +4,10 @@ app.commandLine.appendSwitch("disable-http-cache");
 
 app.on("ready", () => {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    minWidth: 640,
-    minHeight: 480,
+    width: 900,
+    height: 650,
+    minWidth: 900,
+    minHeight: 650,
     title: "EUREKA",
     backgroundColor: "#fff",
     devTools: true,
